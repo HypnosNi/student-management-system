@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Student Information Management System</title>
+	<link rel="stylesheet" type="text/css" href="css/login&register.css">
+	<link rel="icon" type="image/x-ico" href="images/stu.ico">
+</head>
+<body>
+<!--Header-->
+<header>
+	<nav>
+		<ul>
+			<a href="#"><li>Home</li></a>
+			<a href="#"><li>About the System</li></a>
+			<a href="login.html"><li>Login</li></a>
+			<a href="register.html"><li>Register</li></a>
+		</ul>
+	</nav>
+</header>
+
+<!--Main-->
+<main>
+	<div class="container">
+		<img class="login_bg" src="images/login.png">
+		<form class="register_form" action="RegisterServlet" method="post">
+			<h3>Student Information Management System</h3>
+			<p>Register</p>
+			<input type="text" autofocus="autofocus" name="username" placeholder="Username" required="required">
+			<input type="password" name="password" placeholder="Password" required="required">
+			<p>Permission Level</p>
+			<span class="radio">
+                        <input type="radio" name="level" value="User" checked="checked"><span>User</span>
+                        <input type="radio" name="level" value="Admin"><span>Admin</span>
+                    </span>
+			<input id="submit" type="submit" name="submit" value="Register">
+		</form>
+	</div>
+</main>
+
+<!--Footer-->
+<footer>
+	<div class="info">
+		<ul>
+			<a href="#"><li>Student Information Management System</li></a>
+			<a href="#"><li>Help & Feedback</li></a>
+			<a href="#"><li>Contact Us</li></a>
+		</ul>
+	</div>
+	<div class="copyright">
+		&copy; Copyright. All rights reserved. Design by <a href="http://www.github.com/Hypnosni/">Kewei Zeng</a>
+	</div>
+</footer>
+</body>
+</html>
